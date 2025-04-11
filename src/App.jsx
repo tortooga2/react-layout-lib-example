@@ -3,9 +3,9 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-import NewPage from "./NewPage";
-import VerticalDiv from "./VerticalDiv";
-import HorizontalDiv from "./HorizontalDiv";
+import NewPage from "./SimpleLayoutLib/NewPage";
+import VerticalDiv from "./SimpleLayoutLib/VerticalDiv";
+import HorizontalDiv from "./SimpleLayoutLib/HorizontalDiv";
 
 function App() {
     const [divWidth, setDivWidth] = useState(false);
@@ -46,7 +46,7 @@ function App() {
                             setDivWidth(!divWidth);
                         }}
                     >
-                        Close Window
+                        {divWidth ? "Open" : "Close"} Window
                     </button>
                 </VerticalDiv>
                 <VerticalDiv
