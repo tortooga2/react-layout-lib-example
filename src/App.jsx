@@ -27,7 +27,7 @@ function App() {
                         borderRadius: "0.5rem",
                     }}
                 ></VerticalDiv>
-                <HorizontalDiv padding="0rem">
+                <HorizontalDiv padding="0rem" gap="0rem">
                     <VerticalDiv
                         width="100%"
                         color="lightgreen"
